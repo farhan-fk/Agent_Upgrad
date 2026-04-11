@@ -1,0 +1,27 @@
+# Core OpenAI SDK
+openai
+
+# Environment management
+python-dotenv>=1.0.0
+
+# UI Framework
+gradio>=4.0.0
+
+# Data Processing
+pandas>=2.0.0
+
+# PDF Processing
+pdfplumber>=0.10.0
+
+# Web Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# LangChain Components (for RAG)
+langchain-community>=0.0.20
+langchain-core>=0.1.0
+langchain-text-splitters>=0.0.1
+langchain-openai>=0.0.5
+
+# Vector Database
+chromadb>=0.4.0
