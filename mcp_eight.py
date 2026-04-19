@@ -19,20 +19,20 @@ GITHUB_PAT = os.getenv("GITHUB_PAT")  # Set this in your .env file
 
 client = OpenAI()
 
-# resp = client.responses.create(
-#     model="gpt-5-mini",   # small model = cheaper + faster
-#     tools=[{
-#         "type": "mcp",
-#         "server_label": "github",
-#         "server_description": "GitHub MCP server test",
-#         "server_url": "https://api.githubcopilot.com/mcp/",
-#         "headers": {
-#             "Authorization": f"Bearer {GITHUB_PAT}"
-#         },
-#         "require_approval": "never",
-#     }],
-#     input="Show my GitHub username using the GitHub MCP server.",
-# )
+resp = client.responses.create(
+    model="gpt-5-mini",   # small model = cheaper + faster
+    tools=[{
+        "type": "mcp",
+        "server_label": "github",
+        "server_description": "GitHub MCP server test",
+        "server_url": "https://api.githubcopilot.com/mcp/",
+        "headers": {
+            "Authorization": f"Bearer {GITHUB_PAT}"
+        },
+        "require_approval": "never",
+    }],
+    input="Show my GitHub username using the GitHub MCP server.",
+)
 
 # print(resp.output_text)
 

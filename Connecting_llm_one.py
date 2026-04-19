@@ -9,8 +9,8 @@ client = OpenAI()
 
 response = client.responses.create(
     model="gpt-4o-mini",
-    input="Tell me Upgrad inception story in 100 words.",
-    instructions="Respond in a funny way and in Captain Jack Sparrow Style.",
+    input="Tell me ABB Inception Story",
+    instructions="You are helpful Assistant.",
     temperature=1,
     max_output_tokens=200,
     

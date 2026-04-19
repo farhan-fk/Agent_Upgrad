@@ -31,8 +31,9 @@ client = OpenAI()
 
 # print("Response from LLM with tool integration:", response.output_text)
 
-##Passing Information Between LLM Calls##
-# Student's learning topic
+#Passing Information Between LLM Calls##
+#Student's learning topic
+
 topic = "Find The latest news aboout Black holes and summarize it in simple terms."
     
    

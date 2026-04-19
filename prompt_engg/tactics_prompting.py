@@ -33,7 +33,7 @@ def get_completion(prompt, model="gpt-4o-mini"):
 # Tactic 1: Use delimiters
 # - Triple quotes: """
 # - Triple backticks: ```
-# - Triple dashes: ---
+# - Triple dashes: ---promp
 # - Angle brackets: < >
 # - XML tags: <tag> </tag>
 
@@ -181,23 +181,23 @@ def get_completion(prompt, model="gpt-4o-mini"):
 # for equipment change and schedule modification. You will receive confirmation email within 
 # one hour with new booking details.
 
-# Customer: Okay good. And what about additional charges for reefer container? Will it be more expensive?
+# # Customer: Okay good. And what about additional charges for reefer container? Will it be more expensive?
 
-# Agent: Yes, there will be price difference because reefer containers have higher rates. The 
-# commercial team will send you revised quotation along with confirmation. They will contact you 
-# within 2 hours.
+# # Agent: Yes, there will be price difference because reefer containers have higher rates. The 
+# # commercial team will send you revised quotation along with confirmation. They will contact you 
+# # within 2 hours.
 
-# Customer: Alright, please make sure they contact fast. We need to finalize everything today only.
+# # Customer: Alright, please make sure they contact fast. We need to finalize everything today only.
 
-# Agent: Absolutely. Is there anything else I can help you with?
+# # Agent: Absolutely. Is there anything else I can help you with?
 
-# Customer: No, that's all. Just please process this urgently.
+# # Customer: No, that's all. Just please process this urgently.
 
-# Agent: Definitely Mr. Ramesh. Your ticket reference number is TKT-2024-8821. You'll receive 
-# all details on your email shortly. Thank you for calling Maersk.
+# # Agent: Definitely Mr. Ramesh. Your ticket reference number is TKT-2024-8821. You'll receive 
+# # all details on your email shortly. Thank you for calling Maersk.
 
-# Customer: Thank you, bye.
-# """
+# # Customer: Thank you, bye.
+# # """
 
 # prompt = f"""
 # Extract key information from the customer call transcript and provide it in JSON format \
